@@ -41,7 +41,7 @@ Repository name: `esp32-s3-touch-lcd-4`
 | Version | Image | Intro | Full docs |
 | ------- | ----- | ----- | --------- |
 | ESP32-S3-Touch-LCD-4 | <img alt="ESP32-S3-Touch-LCD-4" src="./versions/ESP32-S3-Touch-LCD-4/images/product.png" width="120" /> | [Intro](#esp32-s3-touch-lcd-4) | [Full docs](./versions/ESP32-S3-Touch-LCD-4/) |
-| ESP32-S3-Touch-4-Classic | | [Intro](#esp32-s3-touch-4-classic) | [Full docs](./versions/ESP32-S3-Touch-4-Classic/) |
+| ESP32-S3-Touch-4-Classic | <img alt="ESP32-S3-Touch-4-Classic" src="./versions/ESP32-S3-Touch-4-Classic/images/product.png" width="120" /> | [Intro](#esp32-s3-touch-4-classic) | [Full docs](./versions/ESP32-S3-Touch-4-Classic/) |
 | ESP32-S3-Touch-4-Pro | <img alt="ESP32-S3-Touch-4-Pro" src="./versions/ESP32-S3-Touch-4-Pro/images/product.png" width="120" /> | [Intro](#esp32-s3-touch-4-pro) | [Full docs](./versions/ESP32-S3-Touch-4-Pro/) |
 | ESP32-S3-Touch-4-220V | <img alt="ESP32-S3-Touch-4-220V" src="./versions/ESP32-S3-Touch-4-220V/images/product.png" width="120" /> | [Intro](#esp32-s3-touch-4-220v) | [Full docs](./versions/ESP32-S3-Touch-4-220V/) |
 
@@ -58,6 +58,8 @@ Product page, datasheets, and examples: [versions/ESP32-S3-Touch-LCD-4/](./versi
 ---
 
 ## ESP32-S3-Touch-4-Classic
+
+<p align="center"><img alt="ESP32-S3-Touch-4-Classic" src="./versions/ESP32-S3-Touch-4-Classic/images/product.png" width="320" /></p>
 
 **Notes:** Newer base board (schematic `ESP32-S3-Touch基础板V1.0`); bringup example / prebuilt firmware verified on this SKU.
 

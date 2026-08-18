@@ -13,6 +13,8 @@
   <img alt="RS485" src="https://img.shields.io/badge/Interface-RS485-F39C12?style=flat-square" />
 </p>
 
+<p align="center"><img alt="OSPTEK ESP32-S3-Touch-4-Classic 产品宣传图" src="./images/product.png" width="420" /></p>
+
 ## 目录
 
 - [产品简介](#产品简介)

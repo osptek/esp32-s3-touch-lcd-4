@@ -41,7 +41,7 @@
 | 版本 | 宣传图 | 简介 | 完整资料 |
 | ---- | ------ | ---- | -------- |
 | ESP32-S3-Touch-LCD-4 | <img alt="ESP32-S3-Touch-LCD-4" src="./versions/ESP32-S3-Touch-LCD-4/images/product.png" width="120" /> | [简介](#esp32-s3-touch-lcd-4) | [完整资料](./versions/ESP32-S3-Touch-LCD-4/) |
-| ESP32-S3-Touch-4-Classic | | [简介](#esp32-s3-touch-4-classic) | [完整资料](./versions/ESP32-S3-Touch-4-Classic/) |
+| ESP32-S3-Touch-4-Classic | <img alt="ESP32-S3-Touch-4-Classic" src="./versions/ESP32-S3-Touch-4-Classic/images/product.png" width="120" /> | [简介](#esp32-s3-touch-4-classic) | [完整资料](./versions/ESP32-S3-Touch-4-Classic/) |
 | ESP32-S3-Touch-4-Pro | <img alt="ESP32-S3-Touch-4-Pro" src="./versions/ESP32-S3-Touch-4-Pro/images/product.png" width="120" /> | [简介](#esp32-s3-touch-4-pro) | [完整资料](./versions/ESP32-S3-Touch-4-Pro/) |
 | ESP32-S3-Touch-4-220V | <img alt="ESP32-S3-Touch-4-220V" src="./versions/ESP32-S3-Touch-4-220V/images/product.png" width="120" /> | [简介](#esp32-s3-touch-4-220v) | [完整资料](./versions/ESP32-S3-Touch-4-220V/) |
 
@@ -58,6 +58,8 @@
 ---
 
 ## ESP32-S3-Touch-4-Classic
+
+<p align="center"><img alt="ESP32-S3-Touch-4-Classic" src="./versions/ESP32-S3-Touch-4-Classic/images/product.png" width="320" /></p>
 
 **说明：** 新版基础板（原理图 `ESP32-S3-Touch基础板V1.0`）；点屏示例 / 预编译固件已在本版验证。
 
