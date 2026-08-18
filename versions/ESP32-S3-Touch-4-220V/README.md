@@ -177,7 +177,7 @@ OSPTEK **ESP32-S3-Touch-4-220V** 是一款集成 **4 英寸 RGB 触摸显示**�
 | ---- | ---- |
 | 点屏 / LVGL Demo（RGB ST7701，480×480，触摸 FT6336U） | [`examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/`](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/) |
 
-> 该示例与 Classic 分支同源（同一屏模组与触摸方案）。
+> 该示例与 Classic 版本同源（同一屏模组与触摸方案）。
 
 在已安装 ESP-IDF 的环境下：
 

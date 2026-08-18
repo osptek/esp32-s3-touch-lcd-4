@@ -177,7 +177,7 @@ Espressif:
 | ---- | ---- |
 | Display bring-up / LVGL demo (RGB ST7701, 480×480, touch FT6336U) | [`examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/`](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/) |
 
-> Same example sources as the Classic branch (same panel and touch).
+> Same example sources as the Classic SKU (same panel and touch).
 
 With ESP-IDF installed:
 
