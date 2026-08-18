@@ -18,7 +18,6 @@
 ## Contents
 
 - [Overview](#overview)
-- [Other SKUs in this series](#other-skus-in-this-series)
 - [Features](#features)
 - [Applications](#applications)
 - [Specifications](#specifications)
