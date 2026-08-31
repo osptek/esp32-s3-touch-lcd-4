@@ -36,13 +36,13 @@
 
 ## 产品简介
 
-OSPTEK **ESP32-S3-Touch-LCD-4** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + Bluetooth LE 5）模组的 **4 英寸触摸屏面板**，集成 **16 MB Flash** 与 **8 MB PSRAM**，板载 **YDP395B003-V4**（约 3.95"）**480×480** RGB 电容触摸屏（驱动 **ST7701S**）。
+OSPTEK **ESP32-S3-Touch-LCD-4** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + Bluetooth LE 5）模组的 **4 英寸触摸屏面板**，集成 **16 MB Flash** 与 **8 MB PSRAM**，板载 **YDP395BT003-V4**（约 3.95"）**480×480** RGB 电容触摸屏（驱动 **ST7701S**）。
 
 主板型号为 **ESP32-TPCB4**，主控模组为 **ESP32-S3-WROOM-1-N16R8**，板载一路 **RS485**、USB Type-C（供电 / 烧录 / 充电）、I²C 传感器接口与蜂鸣器，适合作为智能中控、交互面板等方案的整机形态产品。
 
 ## 产品特性
 
-- **4 寸方屏触摸**：YDP395B003-V4，480×480，ST7701S + 电容触摸，适合 86 型面板人机界面
+- **4 寸方屏触摸**：YDP395BT003-V4，480×480，ST7701S + 电容触摸，适合 86 型面板人机界面
 - **ESP32-S3 主控**：Wi-Fi + BLE 5，16 MB Flash + 8 MB PSRAM
 - **工业总线**：板载 RS485（SP3485EEN + 自动收发），便于接入现场设备
 - **供电灵活**：USB Type-C 提供 5 V 主电源；接线端口支持 **12–24 VDC** 宽压输入（经 DCDC 降压）
@@ -76,7 +76,7 @@ OSPTEK **ESP32-S3-Touch-LCD-4** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + Bluet
 
 | 项目 | 规格 |
 | ---- | ---- |
-| 屏模组 | YDP395B003-V4（约 3.95 英寸） |
+| 屏模组 | YDP395BT003-V4（约 3.95 英寸） |
 | 分辨率 | 480×480 |
 | 驱动 IC | ST7701S |
 | 显示接口 | RGB 18-bit |
@@ -99,19 +99,19 @@ OSPTEK **ESP32-S3-Touch-LCD-4** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + Bluet
 
 ## 屏幕
 
-本面板搭载 OSPTEK 自产 TFT 模组 **YDP395B003-V4**，驱动 IC 为 **ST7701S**，通过主板 LCD FPC 连接；触摸为电容方案（I²C，FT6336U）。
+本面板搭载 OSPTEK 自产 TFT 模组 **YDP395BT003-V4**，驱动 IC 为 **ST7701S**，通过主板 LCD FPC 连接；触摸为电容方案（I²C，FT6336U）。
 
-### 模组规格（YDP395B003-V4）
+### 模组规格（YDP395BT003-V4）
 
 | 项目 | 规格 |
 | ---- | ---- |
-| 模组型号 | YDP395B003-V4 |
+| 模组型号 | YDP395BT003-V4 |
 | 尺寸 | 3.95 英寸（对角线） |
 | 显示模式 | Normally Black |
 | 分辨率 | 480（H）RGB × 480（V） |
 | 点距 | 153 μm × 153 μm |
 | 有效显示区 | 71.86 × 70.18 mm |
-| 模组外形 | 74.66 × 76.54 × 2.06 mm |
+| 模组外形 | 83.85 × 83.85 × 3.27 mm |
 | 排列 | RGB 垂直条纹 |
 | 接口 | RGB 18-bit（含 HSYNC / VSYNC / DE / DCLK）；驱动初始化为 3-wire SPI（SDA / SCL / CS） |
 | 驱动 IC | ST7701S |
@@ -126,8 +126,11 @@ OSPTEK **ESP32-S3-Touch-LCD-4** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + Bluet
 
 ### 屏幕相关资料
 
-- [屏模组规格书 YDP395B003-V4（PDF）](./docs/YDP_395_B003_V4_d3e49044f9.pdf)
-- [驱动 IC ST7701S Datasheet（PDF）](./docs/ST_7701_S_SPEC_V1_3_f82b940377.pdf)
+- [屏模组规格书 YDP395BT003-V4（PDF）](./docs/YDP395BT003-V4.pdf)
+- [总成图 CAD（YDP395BT003-V4）](./docs/YDP395BT003-V4.dwg)
+- [驱动 IC ST7701S Datasheet（PDF）](./docs/ST7701S_SPEC_V1.3.pdf)
+- [触摸 IC FT6336U Datasheet（PDF）](./docs/FT6336U_DataSheet_V1.1.pdf)
+- [初始化序列（文本）](./docs/BOE3.95_480x480_ST7701S_init.txt)
 
 ## 硬件资源
 
@@ -243,8 +246,11 @@ esp32-s3-touch-lcd-4/                                # 仓库根（导航见 ../
 
 - [使用指南（PDF）](./docs/ESP32-S3-Touch-LCD-4_使用指南2025.3.14.pdf)
 - [完整原理图（PDF）](./docs/SCH_Esp32s3_3.95in_RS485[模组]_R2_2025-02-05.pdf)
-- [屏模组规格书 YDP395B003-V4（PDF）](./docs/YDP_395_B003_V4_d3e49044f9.pdf)
-- [驱动 IC ST7701S Datasheet（PDF）](./docs/ST_7701_S_SPEC_V1_3_f82b940377.pdf)
+- [屏模组规格书 YDP395BT003-V4（PDF）](./docs/YDP395BT003-V4.pdf)
+- [总成图 CAD（YDP395BT003-V4）](./docs/YDP395BT003-V4.dwg)
+- [驱动 IC ST7701S Datasheet（PDF）](./docs/ST7701S_SPEC_V1.3.pdf)
+- [触摸 IC FT6336U Datasheet（PDF）](./docs/FT6336U_DataSheet_V1.1.pdf)
+- [初始化序列（文本）](./docs/BOE3.95_480x480_ST7701S_init.txt)
 - [点屏示例工程](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/)
 - [预编译固件 esp32-s3-touch-lcd-4.bin](./firmware/esp32-s3-touch-lcd-4.bin)
 
