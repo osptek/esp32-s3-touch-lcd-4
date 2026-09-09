@@ -21,6 +21,7 @@
 - [ESP32-S3-Touch-4-Classic](#esp32-s3-touch-4-classic)
 - [ESP32-S3-Touch-4-Pro](#esp32-s3-touch-4-pro)
 - [ESP32-S3-Touch-4-220V](#esp32-s3-touch-4-220v)
+- [外壳 CAD](#外壳-cad)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
@@ -84,6 +85,23 @@
 **说明：** 220V 交流供电版（AC 85–265 V）；一路 RS485。
 
 完整产品页、规格书与示例：[versions/ESP32-S3-Touch-4-220V/](./versions/ESP32-S3-Touch-4-220V/)
+
+---
+
+## 外壳 CAD
+
+本系列 **86 型外壳**（2 层 / 4 层）全型号通用。
+
+**4 层外壳**
+
+- [`0302(1).dwg`](./docs/86-enclosure-4-layer/0302(1).dwg)
+- [`WSD4寸-2d-1116.dwg`](./docs/86-enclosure-4-layer/WSD4%E5%AF%B8-2d-1116.dwg)
+
+**2 层外壳**
+
+- [`3.95-01 PCB.dwg`](./docs/86-enclosure-2-layer/3.95-01%20PCB.dwg)
+- [`增加开口结构外壳20250102.dwg`](./docs/86-enclosure-2-layer/%E5%A2%9E%E5%8A%A0%E5%BC%80%E5%8F%A3%E7%BB%93%E6%9E%84%E5%A4%96%E5%A3%B320250102.dwg)
+- [`装配0718(1).DWG`](./docs/86-enclosure-2-layer/%E8%A3%85%E9%85%8D0718(1).DWG)
 
 ---
 

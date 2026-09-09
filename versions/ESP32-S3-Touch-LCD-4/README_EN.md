@@ -255,6 +255,16 @@ esp32-s3-touch-lcd-4/                                # repo root (nav: ../../REA
 - [Display example](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/)
 - [Prebuilt firmware esp32-s3-touch-lcd-4.bin](./firmware/esp32-s3-touch-lcd-4.bin)
 
+### Shared enclosure CAD
+
+The 86-type enclosure (2-layer / 4-layer) is shared by every SKU. Files live in the repo-root `docs/` folder.
+
+- [4-layer: `0302(1).dwg`](../../docs/86-enclosure-4-layer/0302(1).dwg)
+- [4-layer: `WSD4寸-2d-1116.dwg`](../../docs/86-enclosure-4-layer/WSD4%E5%AF%B8-2d-1116.dwg)
+- [2-layer: `3.95-01 PCB.dwg`](../../docs/86-enclosure-2-layer/3.95-01%20PCB.dwg)
+- [2-layer: `增加开口结构外壳20250102.dwg`](../../docs/86-enclosure-2-layer/%E5%A2%9E%E5%8A%A0%E5%BC%80%E5%8F%A3%E7%BB%93%E6%9E%84%E5%A4%96%E5%A3%B320250102.dwg)
+- [2-layer: `装配0718(1).DWG`](../../docs/86-enclosure-2-layer/%E8%A3%85%E9%85%8D0718(1).DWG)
+
 ### Chip Documents (Espressif)
 
 - [ESP32-S3 product page](https://www.espressif.com/en/products/socs/esp32-s3)
