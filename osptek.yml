@@ -1,0 +1,11 @@
+id: esp32-s3-touch-lcd-4
+category: panels
+
+title: ESP32-S3-Touch-LCD-4
+summary: 4" 480×480 touch panel with ESP32-S3, RS485, and capacitive RGB display.
+
+specs:
+  mcu: ESP32-S3
+  display: 4" 480×480
+  wireless: Wi-Fi + BLE 5
+  interface: RS485
