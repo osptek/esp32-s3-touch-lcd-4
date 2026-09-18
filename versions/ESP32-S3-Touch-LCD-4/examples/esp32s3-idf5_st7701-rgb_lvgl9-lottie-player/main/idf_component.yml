@@ -1,0 +1,14 @@
+dependencies:
+  idf:
+    version: '>=5.5.0'
+  espressif/esp_lvgl_adapter:
+    version: 0.6.*
+    public: true
+  hw_init:
+    version: '*'
+  lvgl/lvgl:
+    version: 9.4.*
+    public: true
+  espressif/esp_lv_lottie_player:
+    version: 0.1.*
+    public: true

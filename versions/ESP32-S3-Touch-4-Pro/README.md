@@ -22,6 +22,7 @@
 - [规格参数](#规格参数)
 - [屏幕](#屏幕)
 - [硬件资源](#硬件资源)
+- [示例工程](#示例工程)
 - [仓库结构](#仓库结构)
 - [相关资料](#相关资料)
 - [购买链接](#购买链接)
@@ -164,6 +165,31 @@ OSPTEK **ESP32-S3-Touch-4-Pro** 在 Classic 基础能力之上，增加板载音
 
 - [ESP32-S3-Touch-Pro V1.1 原理图（PDF）](./docs/ESP32-S3-Touch-Pro_V1.1.pdf)
 
+## 示例工程
+
+触摸走乐鑫 `i2c_master` + `esp_lcd_touch_ft5x06`，已去掉旧版 `driver/i2c.h` / `i2c_driver_install`。屏为 RGB ST7701，480×480。与 Classic 同源（同一屏模组与触摸方案）。
+
+| 说明 | 路径 |
+| ---- | ---- |
+| ESP-IDF 5 · LVGL 8 通用 Demo | [`examples/s3-idf5_st7701-rgb_lvgl8-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl8-common-demo/) |
+| ESP-IDF 5 · LVGL 9 通用 Demo | [`examples/s3-idf5_st7701-rgb_lvgl9-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl9-common-demo/) |
+| ESP-IDF 5 · 3.95 寸盒体工程（rev2） | [`examples/ESP32S3_3.95In_Box_rev2/`](./examples/ESP32S3_3.95In_Box_rev2/) |
+| ESP-IDF 5 · LVGL 8 游戏 Demo | [`examples/esp32s3_st7701_lvgl-game/`](./examples/esp32s3_st7701_lvgl-game/) |
+| ESP-IDF 5 · LVGL 9 Lottie 播放 | [`examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/`](./examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/) |
+| ESP-IDF 6 · LVGL 8 通用 Demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/) |
+| ESP-IDF 6 · LVGL 9 通用 Demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/) |
+
+在已安装对应版本 ESP-IDF 的环境下（IDF 5 工程建议 ≥5.5；IDF 6 工程用 IDF 6）：
+
+```bash
+cd examples/s3-idf5_st7701-rgb_lvgl8-common-demo
+idf.py set-target esp32s3
+idf.py build
+idf.py -p <串口> flash monitor
+```
+
+组件依赖由各工程 `main/idf_component.yml` 管理，首次编译会自动拉取。
+
 ## 仓库结构
 
 ```text
@@ -173,7 +199,8 @@ esp32-s3-touch-lcd-4/                                # 仓库根（导航见 ../
         ├── README.md
         ├── README_EN.md
         ├── images/
-        └── docs/
+        ├── docs/
+        └── examples/
 ```
 
 ## 相关资料
@@ -185,6 +212,7 @@ esp32-s3-touch-lcd-4/                                # 仓库根（导航见 ../
 - [驱动 IC ST7701S Datasheet（PDF）](./docs/ST7701S_SPEC_V1.3.pdf)
 - [触摸 IC FT6336U Datasheet（PDF）](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [初始化序列（文本）](./docs/BOE3.95_480x480_ST7701S_init.txt)
+- [示例工程](#示例工程)
 - [ESP32-S3-Touch-4-Classic](../ESP32-S3-Touch-4-Classic/)
 
 ### 系列通用外壳 CAD

@@ -176,28 +176,36 @@ Espressif:
 
 ## Examples
 
+Touch uses Espressif `i2c_master` + `esp_lcd_touch_ft5x06` (legacy `driver/i2c.h` / `i2c_driver_install` removed). Panel: RGB ST7701, 480×480.
+
 | Description | Path |
-| ---- | ---- |
-| Display bring-up / LVGL demo (RGB ST7701, 480×480, touch FT6336U) | [`examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/`](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/) |
+| ----------- | ---- |
+| ESP-IDF 5 · LVGL 8 common demo | [`examples/s3-idf5_st7701-rgb_lvgl8-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl8-common-demo/) |
+| ESP-IDF 5 · LVGL 9 common demo | [`examples/s3-idf5_st7701-rgb_lvgl9-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl9-common-demo/) |
+| ESP-IDF 5 · 3.95" box project (rev2) | [`examples/ESP32S3_3.95In_Box_rev2/`](./examples/ESP32S3_3.95In_Box_rev2/) |
+| ESP-IDF 5 · LVGL 8 game demo | [`examples/esp32s3_st7701_lvgl-game/`](./examples/esp32s3_st7701_lvgl-game/) |
+| ESP-IDF 5 · LVGL 9 Lottie player | [`examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/`](./examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/) |
+| ESP-IDF 6 · LVGL 8 common demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/) |
+| ESP-IDF 6 · LVGL 9 common demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/) |
 
 > Same example sources as the Classic SKU (same panel and touch).
 
-With ESP-IDF installed:
+With the matching ESP-IDF installed (IDF 5 projects: ≥5.5; IDF 6 projects: IDF 6):
 
 ```bash
-cd examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup
+cd examples/s3-idf5_st7701-rgb_lvgl8-common-demo
 idf.py set-target esp32s3
 idf.py build
 idf.py -p <PORT> flash monitor
 ```
 
-Dependencies are managed by `main/idf_component.yml` and fetched on first build.
+Dependencies are managed by each project's `main/idf_component.yml` and fetched on first build.
 
 ## Prebuilt Firmware
 
 | File | Address | Notes |
 | ---- | -------- | ---- |
-| [`firmware/esp32-s3-touch-lcd-4.bin`](./firmware/esp32-s3-touch-lcd-4.bin) | **`0x0`** | Merged image (bootloader + partition table + app) for the display example above |
+| [`firmware/esp32-s3-touch-lcd-4.bin`](./firmware/esp32-s3-touch-lcd-4.bin) | **`0x0`** | Merged image (bootloader + partition table + app), factory demo firmware |
 
 Flash settings: chip **ESP32-S3**, Flash **16 MB**, **DIO**, **80 MHz**. Write the merged image from **`0x0`**.
 

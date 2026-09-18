@@ -35,7 +35,7 @@
 
 ## 产品简介
 
-> 📌 本文档对应 **ESP32-S3-Touch-4-Classic**（原理图：`ESP32-S3-Touch基础板V1.0`）。本目录内点屏示例 / 预编译固件已在 Classic 板上验证。
+> 📌 本文档对应 **ESP32-S3-Touch-4-Classic**（原理图：`ESP32-S3-Touch基础板V1.0`）。本目录内示例工程 / 预编译固件已在 Classic 板上验证。
 
 OSPTEK **ESP32-S3-Touch-4-Classic** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + Bluetooth LE 5）模组的 **4 英寸触摸屏面板**，集成 **16 MB Flash** 与 **8 MB PSRAM**，板载 **YDP395BT003-V4**（约 3.95"）**480×480** RGB 电容触摸屏（驱动 **ST7701S**）。
 
@@ -167,28 +167,36 @@ OSPTEK **ESP32-S3-Touch-4-Classic** 是一款搭载 ESP32-S3（2.4 GHz Wi-Fi + B
 
 ## 示例工程
 
+触摸走乐鑫 `i2c_master` + `esp_lcd_touch_ft5x06`，已去掉旧版 `driver/i2c.h` / `i2c_driver_install`。屏为 RGB ST7701，480×480。
+
 | 说明 | 路径 |
 | ---- | ---- |
-| 点屏 / LVGL Demo（RGB ST7701，480×480） | [`examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/`](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/) |
+| ESP-IDF 5 · LVGL 8 通用 Demo | [`examples/s3-idf5_st7701-rgb_lvgl8-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl8-common-demo/) |
+| ESP-IDF 5 · LVGL 9 通用 Demo | [`examples/s3-idf5_st7701-rgb_lvgl9-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl9-common-demo/) |
+| ESP-IDF 5 · 3.95 寸盒体工程（rev2） | [`examples/ESP32S3_3.95In_Box_rev2/`](./examples/ESP32S3_3.95In_Box_rev2/) |
+| ESP-IDF 5 · LVGL 8 游戏 Demo | [`examples/esp32s3_st7701_lvgl-game/`](./examples/esp32s3_st7701_lvgl-game/) |
+| ESP-IDF 5 · LVGL 9 Lottie 播放 | [`examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/`](./examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/) |
+| ESP-IDF 6 · LVGL 8 通用 Demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/) |
+| ESP-IDF 6 · LVGL 9 通用 Demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/) |
 
-> 该示例与预编译固件已在 **Classic** 板上验证。
+> 下列示例与预编译固件已在 **Classic** 板上验证。
 
-在已安装 ESP-IDF 的环境下：
+在已安装对应版本 ESP-IDF 的环境下（IDF 5 工程建议 ≥5.5；IDF 6 工程用 IDF 6）：
 
 ```bash
-cd examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup
+cd examples/s3-idf5_st7701-rgb_lvgl8-common-demo
 idf.py set-target esp32s3
 idf.py build
 idf.py -p <串口> flash monitor
 ```
 
-组件依赖由 `main/idf_component.yml` 管理，首次编译会自动拉取。
+组件依赖由各工程 `main/idf_component.yml` 管理，首次编译会自动拉取。
 
 ## 预编译固件
 
 | 文件 | 烧录地址 | 说明 |
 | ---- | -------- | ---- |
-| [`firmware/esp32-s3-touch-lcd-4.bin`](./firmware/esp32-s3-touch-lcd-4.bin) | **`0x0`** | 合并烧录镜像（bootloader + 分区表 + 应用），对应上述点屏示例 |
+| [`firmware/esp32-s3-touch-lcd-4.bin`](./firmware/esp32-s3-touch-lcd-4.bin) | **`0x0`** | 合并烧录镜像（bootloader + 分区表 + 应用），出厂演示固件 |
 
 Flash 参数与工程配置一致：芯片 **ESP32-S3**，Flash **16 MB**，**DIO**，**80 MHz**。合并包从地址 **`0x0`** 整包写入。
 
@@ -234,7 +242,7 @@ esp32-s3-touch-lcd-4/                                # 仓库根（导航见 ../
 - [驱动 IC ST7701S Datasheet（PDF）](./docs/ST7701S_SPEC_V1.3.pdf)
 - [触摸 IC FT6336U Datasheet（PDF）](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [初始化序列（文本）](./docs/BOE3.95_480x480_ST7701S_init.txt)
-- [点屏示例工程](./examples/esp32s3-3.95-tft-480x480-rgb-st7701-bringup/)
+- [示例工程](#示例工程)
 - [预编译固件 esp32-s3-touch-lcd-4.bin](./firmware/esp32-s3-touch-lcd-4.bin)
 
 ### 系列通用外壳 CAD

@@ -62,7 +62,7 @@
 
 <p align="center"><img alt="ESP32-S3-Touch-4-Classic" src="./versions/ESP32-S3-Touch-4-Classic/images/product.png" width="320" /></p>
 
-**说明：** 新版基础板（原理图 `ESP32-S3-Touch基础板V1.0`）；点屏示例 / 预编译固件已在本版验证。
+**说明：** 新版基础板（原理图 `ESP32-S3-Touch基础板V1.0`）；示例工程 / 预编译固件已在本版验证。
 
 完整产品页、规格书与示例：[versions/ESP32-S3-Touch-4-Classic/](./versions/ESP32-S3-Touch-4-Classic/)
 

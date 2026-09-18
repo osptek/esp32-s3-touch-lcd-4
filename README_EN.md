@@ -62,7 +62,7 @@ Product page, datasheets, and examples: [versions/ESP32-S3-Touch-LCD-4/](./versi
 
 <p align="center"><img alt="ESP32-S3-Touch-4-Classic" src="./versions/ESP32-S3-Touch-4-Classic/images/product.png" width="320" /></p>
 
-**Notes:** Newer base board (schematic `ESP32-S3-Touch基础板V1.0`); bringup example / prebuilt firmware verified on this SKU.
+**Notes:** Newer base board (schematic `ESP32-S3-Touch基础板V1.0`); examples / prebuilt firmware verified on this SKU.
 
 Product page, datasheets, and examples: [versions/ESP32-S3-Touch-4-Classic/](./versions/ESP32-S3-Touch-4-Classic/)
 
