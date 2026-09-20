@@ -168,28 +168,22 @@ Full PDF:
 
 ## Examples
 
-Touch uses Espressif `i2c_master` + `esp_lcd_touch_ft5x06` (legacy `driver/i2c.h` / `i2c_driver_install` removed). Panel: RGB ST7701, 480×480. Same sources as Classic (same panel and touch).
+Pro-only demo: RGB ST7701 (480×480) + FT6336U touch, RS485 Modbus, and PCA9557.
 
 | Description | Path |
 | ----------- | ---- |
-| ESP-IDF 5 · LVGL 8 common demo | [`examples/s3-idf5_st7701-rgb_lvgl8-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl8-common-demo/) |
-| ESP-IDF 5 · LVGL 9 common demo | [`examples/s3-idf5_st7701-rgb_lvgl9-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl9-common-demo/) |
-| ESP-IDF 5 · 3.95" box project (rev2) | [`examples/ESP32S3_3.95In_Box_rev2/`](./examples/ESP32S3_3.95In_Box_rev2/) |
-| ESP-IDF 5 · LVGL 8 game demo | [`examples/esp32s3_st7701_lvgl-game/`](./examples/esp32s3_st7701_lvgl-game/) |
-| ESP-IDF 5 · LVGL 9 Lottie player | [`examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/`](./examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/) |
-| ESP-IDF 6 · LVGL 8 common demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/) |
-| ESP-IDF 6 · LVGL 9 common demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/) |
+| ESP32-S3-Touch-4-Pro demo (LVGL 9 · RS485 Modbus) | [`examples/esp32-s3-touch-lcd-4-pro-demo/`](./examples/esp32-s3-touch-lcd-4-pro-demo/) |
 
-With the matching ESP-IDF installed (IDF 5 projects: ≥5.5; IDF 6 projects: IDF 6):
+With ESP-IDF installed:
 
 ```bash
-cd examples/s3-idf5_st7701-rgb_lvgl8-common-demo
+cd examples/esp32-s3-touch-lcd-4-pro-demo
 idf.py set-target esp32s3
 idf.py build
 idf.py -p <PORT> flash monitor
 ```
 
-Component dependencies are managed by each project's `main/idf_component.yml` and are fetched on the first build.
+Component dependencies are managed by `main/idf_component.yml` and are fetched on the first build.
 
 ## Repository layout
 

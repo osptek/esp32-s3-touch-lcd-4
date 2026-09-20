@@ -167,28 +167,22 @@ OSPTEK **ESP32-S3-Touch-4-Pro** 在 Classic 基础能力之上，增加板载音
 
 ## 示例工程
 
-触摸走乐鑫 `i2c_master` + `esp_lcd_touch_ft5x06`，已去掉旧版 `driver/i2c.h` / `i2c_driver_install`。屏为 RGB ST7701，480×480。与 Classic 同源（同一屏模组与触摸方案）。
+本型号专用演示：RGB ST7701（480×480）+ FT6336U 触摸、RS485 Modbus、PCA9557。
 
 | 说明 | 路径 |
 | ---- | ---- |
-| ESP-IDF 5 · LVGL 8 通用 Demo | [`examples/s3-idf5_st7701-rgb_lvgl8-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl8-common-demo/) |
-| ESP-IDF 5 · LVGL 9 通用 Demo | [`examples/s3-idf5_st7701-rgb_lvgl9-common-demo/`](./examples/s3-idf5_st7701-rgb_lvgl9-common-demo/) |
-| ESP-IDF 5 · 3.95 寸盒体工程（rev2） | [`examples/ESP32S3_3.95In_Box_rev2/`](./examples/ESP32S3_3.95In_Box_rev2/) |
-| ESP-IDF 5 · LVGL 8 游戏 Demo | [`examples/esp32s3_st7701_lvgl-game/`](./examples/esp32s3_st7701_lvgl-game/) |
-| ESP-IDF 5 · LVGL 9 Lottie 播放 | [`examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/`](./examples/esp32s3-idf5_st7701-rgb_lvgl9-lottie-player/) |
-| ESP-IDF 6 · LVGL 8 通用 Demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl8-common-demo/) |
-| ESP-IDF 6 · LVGL 9 通用 Demo | [`examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/`](./examples/esp32s3-idf6_st7701-rgb_lvgl9-common-demo/) |
+| ESP32-S3-Touch-4-Pro Demo（LVGL 9 · RS485 Modbus） | [`examples/esp32-s3-touch-lcd-4-pro-demo/`](./examples/esp32-s3-touch-lcd-4-pro-demo/) |
 
-在已安装对应版本 ESP-IDF 的环境下（IDF 5 工程建议 ≥5.5；IDF 6 工程用 IDF 6）：
+在已安装 ESP-IDF 的环境下：
 
 ```bash
-cd examples/s3-idf5_st7701-rgb_lvgl8-common-demo
+cd examples/esp32-s3-touch-lcd-4-pro-demo
 idf.py set-target esp32s3
 idf.py build
 idf.py -p <串口> flash monitor
 ```
 
-组件依赖由各工程 `main/idf_component.yml` 管理，首次编译会自动拉取。
+组件依赖由 `main/idf_component.yml` 管理，首次编译会自动拉取。
 
 ## 仓库结构
 

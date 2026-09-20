@@ -1,0 +1,23 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "app_init.c"
+        "lvgl_port.c"
+        "pca9557/pca9557.c"
+        "modbus_port/modbus_port.c"
+        "demo_ui/demo_ui.c"
+    INCLUDE_DIRS
+        "."
+        "pca9557"
+        "modbus_port"
+        "demo_ui"
+    REQUIRES
+        driver
+        esp_lcd
+        esp_lcd_st7701
+        esp_lcd_touch_ft6336u
+        esp_lcd_panel_io_additions
+        esp_io_expander
+        lvgl
+        esp-modbus
+)
