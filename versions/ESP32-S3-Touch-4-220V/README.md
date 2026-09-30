@@ -41,7 +41,7 @@ OSPTEK **ESP32-S3-Touch-4-220V** 是一款集成 **4 英寸 RGB 触摸显示**�
 
 ## 产品特性
 
-- **4 寸方屏触摸**：YDP395BT003-V4，480×480，ST7701S + 电容触摸
+- **4 寸方屏触摸**：YDP395BT009-V1，480×480，ST7701S + 电容触摸
 - **ESP32-S3 主控**：ESP32-S3-WROOM-1-N16R8，**16 MB Flash + 8 MB PSRAM**，Wi-Fi 与 BLE 5.0
 - **220V 供电**：AC **85~265 V** 输入，DC **24 V** 输出
 - **RS485**：工业现场通信接口
@@ -72,7 +72,7 @@ OSPTEK **ESP32-S3-Touch-4-220V** 是一款集成 **4 英寸 RGB 触摸显示**�
 
 | 项目 | 规格 |
 | ---- | ---- |
-| 屏模组 | YDP395BT003-V4（约 3.95 英寸） |
+| 屏模组 | YDP395BT009-V1（约 3.95 英寸） |
 | 分辨率 | 480×480 |
 | 驱动 IC | ST7701S |
 | 显示接口 | RGB 18-bit |
@@ -95,13 +95,13 @@ OSPTEK **ESP32-S3-Touch-4-220V** 是一款集成 **4 英寸 RGB 触摸显示**�
 
 ## 屏幕
 
-本面板搭载 OSPTEK 自产 TFT 模组 **YDP395BT003-V4**，驱动 IC 为 **ST7701S**，通过主板 LCD FPC 连接；触摸为电容方案（I²C，FT6336U）。
+本面板搭载 OSPTEK 自产 TFT 模组 **YDP395BT009-V1**，驱动 IC 为 **ST7701S**，通过主板 LCD FPC 连接；触摸为电容方案（I²C，FT6336U）。
 
-### 模组规格（YDP395BT003-V4）
+### 模组规格（YDP395BT009-V1）
 
 | 项目 | 规格 |
 | ---- | ---- |
-| 模组型号 | YDP395BT003-V4 |
+| 模组型号 | YDP395BT009-V1 |
 | 尺寸 | 3.95 英寸（对角线） |
 | 显示模式 | Normally Black |
 | 分辨率 | 480（H）RGB × 480（V） |
@@ -122,8 +122,8 @@ OSPTEK **ESP32-S3-Touch-4-220V** 是一款集成 **4 英寸 RGB 触摸显示**�
 
 ### 屏幕相关资料
 
-- [屏模组规格书 YDP395BT003-V4（PDF）](./docs/YDP395BT003-V4.pdf)
-- [总成图 CAD（YDP395BT003-V4）](./docs/YDP395BT003-V4.dwg)
+- [屏模组规格书 YDP395BT009-V1（PDF）](./docs/YDP395BT009-V1.pdf)
+- [总成图 CAD（YDP395BT009-V1）](./docs/YDP395BT009-V1.dwg)
 - [驱动 IC ST7701S Datasheet（PDF）](./docs/ST7701S_SPEC_V1.3.pdf)
 - [触摸 IC FT6336U Datasheet（PDF）](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [初始化序列（文本）](./docs/BOE3.95_480x480_ST7701S_init.txt)
@@ -243,8 +243,8 @@ esp32-s3-touch-lcd-4/                                # 仓库根（导航见 ../
 - [User Guide (English PDF)](./docs/ESP32-S3-Touch-4-220V_User%20Guide260731.pdf)
 - [YuYue LCD V1.0 原理图（PDF）](./docs/YuYue%20LCD_V1.0.pdf)
 - [YuYue Power V0.8 原理图（PDF）](./docs/YuYue%20Power%20V0.8.pdf)
-- [屏模组规格书 YDP395BT003-V4（PDF）](./docs/YDP395BT003-V4.pdf)
-- [总成图 CAD（YDP395BT003-V4）](./docs/YDP395BT003-V4.dwg)
+- [屏模组规格书 YDP395BT009-V1（PDF）](./docs/YDP395BT009-V1.pdf)
+- [总成图 CAD（YDP395BT009-V1）](./docs/YDP395BT009-V1.dwg)
 - [驱动 IC ST7701S Datasheet（PDF）](./docs/ST7701S_SPEC_V1.3.pdf)
 - [触摸 IC FT6336U Datasheet（PDF）](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [初始化序列（文本）](./docs/BOE3.95_480x480_ST7701S_init.txt)

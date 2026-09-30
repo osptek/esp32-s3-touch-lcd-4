@@ -42,7 +42,7 @@ OSPTEK **ESP32-S3-Touch-4-220V** integrates a **4-inch RGB capacitive touch disp
 
 ## Features
 
-- **4" square touch panel**: YDP395BT003-V4, 480×480, ST7701S + capacitive touch
+- **4" square touch panel**: YDP395BT009-V1, 480×480, ST7701S + capacitive touch
 - **ESP32-S3**: ESP32-S3-WROOM-1-N16R8, **16 MB Flash + 8 MB PSRAM**, Wi-Fi and BLE 5.0
 - **220V power**: AC **85~265 V** in, DC **24 V** out
 - **RS485** industrial communication
@@ -73,7 +73,7 @@ OSPTEK **ESP32-S3-Touch-4-220V** integrates a **4-inch RGB capacitive touch disp
 
 | Item | Specification |
 | ---- | ------------- |
-| Panel module | YDP395BT003-V4 (~3.95") |
+| Panel module | YDP395BT009-V1 (~3.95") |
 | Resolution | 480×480 |
 | Driver IC | ST7701S |
 | Display interface | RGB 18-bit |
@@ -96,13 +96,13 @@ Full module details are in [Display](#display) below.
 
 ## Display
 
-This panel uses OSPTEK TFT module **YDP395BT003-V4**, driver IC **ST7701S**, connected via the LCD FPC; touch is capacitive (I²C, FT6336U).
+This panel uses OSPTEK TFT module **YDP395BT009-V1**, driver IC **ST7701S**, connected via the LCD FPC; touch is capacitive (I²C, FT6336U).
 
-### Module Specs (YDP395BT003-V4)
+### Module Specs (YDP395BT009-V1)
 
 | Item | Specification |
 | ---- | ------------- |
-| Module | YDP395BT003-V4 |
+| Module | YDP395BT009-V1 |
 | Size | 3.95" diagonal |
 | Display mode | Normally Black |
 | Resolution | 480 (H) RGB × 480 (V) |
@@ -123,8 +123,8 @@ Touch signals `TP_SCL` / `TP_SDA` / `TP_INT` / `TP_RESET` share the same FPC; su
 
 ### Display Documents
 
-- [Panel datasheet YDP395BT003-V4 (PDF)](./docs/YDP395BT003-V4.pdf)
-- [Assembly CAD (YDP395BT003-V4)](./docs/YDP395BT003-V4.dwg)
+- [Panel datasheet YDP395BT009-V1 (PDF)](./docs/YDP395BT009-V1.pdf)
+- [Assembly CAD (YDP395BT009-V1)](./docs/YDP395BT009-V1.dwg)
 - [Driver IC ST7701S datasheet (PDF)](./docs/ST7701S_SPEC_V1.3.pdf)
 - [Touch IC FT6336U datasheet (PDF)](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [Init sequence (text)](./docs/BOE3.95_480x480_ST7701S_init.txt)
@@ -243,8 +243,8 @@ esp32-s3-touch-lcd-4/                                # repo root (nav: ../../REA
 - [User Guide (English PDF)](./docs/ESP32-S3-Touch-4-220V_User%20Guide260731.pdf)
 - [YuYue LCD V1.0 schematic (PDF)](./docs/YuYue%20LCD_V1.0.pdf)
 - [YuYue Power V0.8 schematic (PDF)](./docs/YuYue%20Power%20V0.8.pdf)
-- [Panel datasheet YDP395BT003-V4 (PDF)](./docs/YDP395BT003-V4.pdf)
-- [Assembly CAD (YDP395BT003-V4)](./docs/YDP395BT003-V4.dwg)
+- [Panel datasheet YDP395BT009-V1 (PDF)](./docs/YDP395BT009-V1.pdf)
+- [Assembly CAD (YDP395BT009-V1)](./docs/YDP395BT009-V1.dwg)
 - [Driver IC ST7701S datasheet (PDF)](./docs/ST7701S_SPEC_V1.3.pdf)
 - [Touch IC FT6336U datasheet (PDF)](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [Init sequence (text)](./docs/BOE3.95_480x480_ST7701S_init.txt)

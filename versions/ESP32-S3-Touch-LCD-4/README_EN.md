@@ -37,13 +37,13 @@
 
 ## Overview
 
-OSPTEK **ESP32-S3-Touch-LCD-4** is a **4-inch touch panel** based on an ESP32-S3 module (2.4 GHz Wi-Fi + Bluetooth LE 5), with **16 MB Flash** and **8 MB PSRAM**, and an onboard **YDP395BT003-V4** (~3.95") **480×480** RGB capacitive touch display (driver **ST7701S**).
+OSPTEK **ESP32-S3-Touch-LCD-4** is a **4-inch touch panel** based on an ESP32-S3 module (2.4 GHz Wi-Fi + Bluetooth LE 5), with **16 MB Flash** and **8 MB PSRAM**, and an onboard **YDP395BT009-V1** (~3.95") **480×480** RGB capacitive touch display (driver **ST7701S**).
 
 The main board is **ESP32-TPCB4**, with module **ESP32-S3-WROOM-1-N16R8**. It includes one **RS485** port, USB Type-C (power / flash / charge), an I²C sensor header, and a buzzer—suited as a finished product for smart control panels and interactive HMI.
 
 ## Features
 
-- **4" square touch display**: YDP395BT003-V4, 480×480, ST7701S + capacitive touch, ideal for 86-type panel UIs
+- **4" square touch display**: YDP395BT009-V1, 480×480, ST7701S + capacitive touch, ideal for 86-type panel UIs
 - **ESP32-S3 MCU**: Wi-Fi + BLE 5, 16 MB Flash + 8 MB PSRAM
 - **Industrial bus**: onboard RS485 (SP3485EEN + auto direction control) for field devices
 - **Flexible power**: USB Type-C provides 5 V; terminal block supports **12–24 VDC** wide-range input (via DCDC)
@@ -77,7 +77,7 @@ Summary below; full module parameters, driver, and touch details are in [Display
 
 | Item | Specification |
 | ---- | ------------- |
-| Panel module | YDP395BT003-V4 (~3.95") |
+| Panel module | YDP395BT009-V1 (~3.95") |
 | Resolution | 480×480 |
 | Driver IC | ST7701S |
 | Display interface | RGB 18-bit |
@@ -100,13 +100,13 @@ Summary below; full module parameters, driver, and touch details are in [Display
 
 ## Display
 
-This panel uses OSPTEK TFT module **YDP395BT003-V4** with driver IC **ST7701S**, connected via the board LCD FPC. Touch is capacitive (I²C, FT6336U).
+This panel uses OSPTEK TFT module **YDP395BT009-V1** with driver IC **ST7701S**, connected via the board LCD FPC. Touch is capacitive (I²C, FT6336U).
 
-### Module Specifications (YDP395BT003-V4)
+### Module Specifications (YDP395BT009-V1)
 
 | Item | Specification |
 | ---- | ------------- |
-| Module model | YDP395BT003-V4 |
+| Module model | YDP395BT009-V1 |
 | Size | 3.95" (diagonal) |
 | Display mode | Normally black |
 | Resolution | 480 (H) RGB × 480 (V) |
@@ -127,8 +127,8 @@ Touch signals such as `TP_SCL` / `TP_SDA` / `TP_INT` / `TP_RESET` are brought ou
 
 ### Display Documents
 
-- [Panel datasheet YDP395BT003-V4 (PDF)](./docs/YDP395BT003-V4.pdf)
-- [Assembly CAD (YDP395BT003-V4)](./docs/YDP395BT003-V4.dwg)
+- [Panel datasheet YDP395BT009-V1 (PDF)](./docs/YDP395BT009-V1.pdf)
+- [Assembly CAD (YDP395BT009-V1)](./docs/YDP395BT009-V1.dwg)
 - [Driver IC ST7701S datasheet (PDF)](./docs/ST7701S_SPEC_V1.3.pdf)
 - [Touch IC FT6336U datasheet (PDF)](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [Init sequence (text)](./docs/BOE3.95_480x480_ST7701S_init.txt)
@@ -255,8 +255,8 @@ esp32-s3-touch-lcd-4/                                # repo root (nav: ../../REA
 
 - [User guide (PDF, Chinese)](./docs/ESP32-S3-Touch-LCD-4_使用指南2025.3.14.pdf)
 - [Full schematic (PDF)](./docs/SCH_Esp32s3_3.95in_RS485[模组]_R2_2025-02-05.pdf)
-- [Panel datasheet YDP395BT003-V4 (PDF)](./docs/YDP395BT003-V4.pdf)
-- [Assembly CAD (YDP395BT003-V4)](./docs/YDP395BT003-V4.dwg)
+- [Panel datasheet YDP395BT009-V1 (PDF)](./docs/YDP395BT009-V1.pdf)
+- [Assembly CAD (YDP395BT009-V1)](./docs/YDP395BT009-V1.dwg)
 - [Driver IC ST7701S datasheet (PDF)](./docs/ST7701S_SPEC_V1.3.pdf)
 - [Touch IC FT6336U datasheet (PDF)](./docs/FT6336U_DataSheet_V1.1.pdf)
 - [Init sequence (text)](./docs/BOE3.95_480x480_ST7701S_init.txt)
